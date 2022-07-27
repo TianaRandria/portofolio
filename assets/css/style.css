@@ -20,14 +20,14 @@ header {
 }
 
 .nav-link {
-  color: #fff;
+  color: rgb(116, 109, 109);
   font-size: 1.5rem;
   /* padding: 60px;*/
 }
 
 .navbar-nav .nav-link.active,
 .navbar-nav .show > .nav-link {
-  color: #fcbf49;
+  color: #aeaaaa;
 }
 
 .navbar-expand-md .navbar-nav .nav-link {
@@ -62,10 +62,33 @@ header {
   background-size: contain;
   background-position: top 0% right 0%;
 }
+.QuiSuiJe {
+  color: #000;
+}
+.description {
+  font-family: "Amalfi Coast";
+}
+p {
+  animation-duration: 20s;
+  animation-name: slidein;
+}
 
-#profil,
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+#profil {
+  background-color: #ffffff;
+}
 #competences {
-  background: #000;
+  background: rgb(0, 0, 0);
 }
 
 #portfolio {
@@ -121,27 +144,38 @@ header {
 }
 
 h1 {
-  color: #fff;
+  color: rgb(250, 250, 250);
   font-family: "Amalfi Coast", sans-serif;
   font-size: 8rem;
 }
 
 .Ttexte {
-  color: #fcbf49;
-  font-family: "Mirza";
-  margin-left: 50px;
-  margin-top: -20px;
+  color: #e8d5d5;
+  font-family: "economica";
+  margin-left: 80px;
+  margin-top: -40px;
+}
+a {
+  font-size: 2rem;
 }
 
 h2 {
-  color: #fcbf49;
+  color: #ffffff;
   font-family: "Economica", sans-serif;
   font-weight: bold;
   font-size: 3.5rem;
+  text-transform: uppercase;
+}
+h3 {
+  color: white;
+  font-family: "autography";
+  font-size: 40px;
 }
 
 .description {
-  color: rgb(110, 103, 103);
+  color: rgb(0, 0, 0);
+  font-family: "autography";
+  font-size: 40px;
 }
 
 .form-control {
@@ -158,28 +192,30 @@ textarea {
 
 input:focus,
 textarea:focus {
-  border-bottom: 5px solid #fcbf49;
-  box-shadow: 0 0 10px #fcbf49;
+  border-bottom: 5px solid #ffffff;
+  box-shadow: 0 0 10px #ffffff;
 }
 
 .send {
-  border: 1px solid #fcbf49;
+  border: 1px solid #fffefd;
   border-radius: 0rem;
-  color: #fcbf49;
+  color: #ffffff;
   padding: 1rem;
-  box-shadow: inset 0 0 0 0 #fcbf49;
+  box-shadow: inset 0 0 0 0 #ffffff;
   transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  margin-top: 15px;
 }
 
 .send:hover {
   color: #000;
-  box-shadow: inset 200px 0 0 0 #fcbf49;
+  box-shadow: inset 200px 0 0 0 #ffffff;
 }
 
 #maps {
-  width: 100%;
+  width: 50%;
   height: 100%;
   margin: 0;
+  color: #000;
 }
 
 #toTop {
@@ -195,21 +231,22 @@ textarea:focus {
   width: 50px;
   height: 50px;
   border-radius: 10px;
-  background: #fcbf49;
-  color: #fff;
+  background: #ffffff;
+  color: rgb(0, 0, 0);
 }
 
 #toTop:hover {
   background: #fff;
-  color: #fcbf49;
+  color: #000000;
+  border: #000000;
 }
 
 .progress-bar {
-  background-color: #fcbf49;
+  background-color: #000000;
 }
 
 .progress-bar {
-  background-color: #fcbf49;
+  background-color: #000000;
 }
 
 .progress {
@@ -256,39 +293,16 @@ textarea:focus {
   animation-iteration-count: 1.5;
   display: inline-block;
 }
-
-.a:hover {
-  color: orange;
-  /* animation: rubberBand 5s infinite; */
-  animation-name: rubberBand;
+.github {
+  color: rgb(250, 250, 250);
 }
-
-@keyframes rubberBand {
-  from {
-    transform: scale3d(1, 1, 1);
-  }
-
-  30% {
-    transform: scale3d(1.25, 0.75, 1);
-  }
-
-  40% {
-    transform: scale3d(0.75, 1.25, 1);
-  }
-
-  50% {
-    transform: scale3d(1.15, 0.85, 1);
-  }
-
-  65% {
-    transform: scale3d(0.95, 1.05, 1);
-  }
-
-  75% {
-    transform: scale3d(1.05, 0.95, 1);
-  }
-
-  to {
-    transform: scale3d(1, 1, 1);
-  }
+.linkedin {
+  color: rgb(250, 250, 250);
+}
+.fa-solid {
+  color: #fffefd;
+}
+.list-unstyled {
+  font-size: 15px;
+  color: #fff;
 }
