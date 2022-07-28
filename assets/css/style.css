@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Economica:wght@700&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 @font-face {
   font-family: "Amalfi Coast";
   src: url("../fonts/Amalfi\ Coast.ttf");
@@ -68,11 +68,12 @@ header {
 .description {
   font-family: "Amalfi Coast";
 }
+/*
 p {
   animation-duration: 20s;
   animation-name: slidein;
 }
-
+*/
 @keyframes slidein {
   from {
     margin-left: 100%;
@@ -89,10 +90,6 @@ p {
 }
 #competences {
   background: rgb(0, 0, 0);
-}
-
-#portfolio {
-  animation-name: rubberBand;
 }
 
 .box {
@@ -150,10 +147,36 @@ h1 {
 }
 
 .Ttexte {
-  color: #e8d5d5;
+  color: #ffffff;
   font-family: "economica";
-  margin-left: 80px;
-  margin-top: -40px;
+}
+.typewriter p {
+  font-family: "economica"; /* Web-safe typewriter-like font */
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.17em solid rgb(255, 255, 255); /* The typewriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.1em; /* Adjust as needed */
+  animation: typing 3.5s steps(30, end), blinking-cursor 0.5s step-end infinite;
+}
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 80%;
+  }
+}
+/* The typewriter cursor effect */
+@keyframes blinking-cursor {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: rgb(255, 255, 255);
+  }
 }
 a {
   font-size: 2rem;
@@ -170,12 +193,14 @@ h3 {
   color: white;
   font-family: "autography";
   font-size: 40px;
+  margin: 20px;
+  padding: 20px;
 }
 
 .description {
   color: rgb(0, 0, 0);
   font-family: "autography";
-  font-size: 40px;
+  font-size: 35px;
 }
 
 .form-control {
@@ -241,7 +266,269 @@ textarea:focus {
   border: #000000;
 }
 
-.progress-bar {
+.skillcontainer {
+  background: rgb(0, 0, 0);
+  font-family: "Raleway", sans-serif;
+}
+
+.skills {
+  color: #fff;
+  margin-left: 0px;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+
+.skills-bar-container {
+  position: relative;
+  width: 40%;
+  min-width: 350px;
+  margin: 5% auto;
+  list-style: none;
+}
+
+.skills-bar-container li {
+  background: #666666;
+  position: relative;
+  width: 100%;
+  height: 3px;
+  margin-bottom: 35px;
+  margin-top: 8px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.skills-bar-container label {
+  color: #fff;
+  position: relative;
+  margin-left: 0px;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.progressbar {
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+#progress-htmlcss {
+  -webkit-animation-name: progress-htmlcss;
+  animation-name: progress-htmlcss;
+  -webkit-animation-delay: 0.7s;
+  animation-delay: 0.7s;
+}
+
+#progress-jsjq {
+  -webkit-animation-name: progress-jsjq;
+  animation-name: progress-jsjq;
+  -webkit-animation-delay: 1.4s;
+  animation-delay: 1.4s;
+}
+
+#progress-php {
+  -webkit-animation-name: progress-php;
+  animation-name: progress-php;
+  -webkit-animation-delay: 2.1s;
+  animation-delay: 2.1s;
+}
+
+#progress-java {
+  -webkit-animation-name: progress-java;
+  animation-name: progress-java;
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+
+#progress-csharp {
+  -webkit-animation-name: progress-csharp;
+  animation-name: progress-csharp;
+  -webkit-animation-delay: 1.4s;
+  animation-delay: 1.4s;
+}
+
+#progress-sql {
+  -webkit-animation-name: progress-sql;
+  animation-name: progress-sql;
+  -webkit-animation-delay: 2.1s;
+  animation-delay: 2.1s;
+}
+
+.progressblue {
+  background-color: #ffffff;
+}
+
+@-webkit-keyframes progress-htmlcss {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 90%;
+  }
+}
+
+@-webkit-keyframes progress-jsjq {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 65%;
+  }
+}
+
+@-webkit-keyframes progress-php {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 25%;
+  }
+}
+
+@-webkit-keyframes progress-java {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 15%;
+  }
+}
+
+@-webkit-keyframes progress-csharp {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 15%;
+  }
+}
+
+@-webkit-keyframes progress-sql {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 10%;
+  }
+}
+
+@-moz-keyframes progress-htmlcss {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 70%;
+  }
+}
+
+@-moz-keyframes progress-jsjq {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 5%;
+  }
+}
+
+@-moz-keyframes progress-php {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 25%;
+  }
+}
+
+@-moz-keyframes progress-java {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 75%;
+  }
+}
+
+@-moz-keyframes progress-csharp {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 65%;
+  }
+}
+
+@-moz-keyframes progress-sql {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 50%;
+  }
+}
+
+@keyframes progress-htmlcss {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 90%;
+  }
+}
+
+@keyframes progress-jsjq {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 65%;
+  }
+}
+
+@keyframes progress-php {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 25%;
+  }
+}
+
+@keyframes progress-java {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 75%;
+  }
+}
+
+@keyframes progress-csharp {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 65%;
+  }
+}
+
+@keyframes progress-sql {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 50%;
+  }
+}
+/*.progress-bar {
   background-color: #000000;
 }
 
@@ -287,22 +574,125 @@ textarea:focus {
   top: 13px;
   left: 5px;
 }
+
+
 .a {
   animation-duration: 1s;
   animation-fill-mode: both;
   animation-iteration-count: 1.5;
   display: inline-block;
 }
-.github {
+*/
+/*.github {
   color: rgb(250, 250, 250);
+  margin-left: 20px;
 }
 .linkedin {
   color: rgb(250, 250, 250);
+  margin-left: 20px;
 }
 .fa-solid {
   color: #fffefd;
+  margin-left: 20px;
 }
-.list-unstyled {
-  font-size: 15px;
+
+.copyright {
+  font-family: "economica";
+}
+.telechargez {
+  height: auto;
+  color: rgb(0, 0, 0);
+}*/
+*:focus,
+*:active {
+  outline: none !important;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.wrapper {
+  display: inline-flex;
+  list-style: none;
+}
+
+.wrapper .icon {
+  position: relative;
+  background: #ffffff;
+  border-radius: 50%;
+  padding: 15px;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip {
+  position: absolute;
+  top: 0;
+  font-size: 14px;
+  background: #ffffff;
+  color: #ffffff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background: #ffffff;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .icon:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .linkedin:hover,
+.wrapper .linkedin:hover .tooltip,
+.wrapper .linkedin:hover .tooltip::before {
+  background: #1877f2;
+  color: #ffffff;
+}
+
+.wrapper .Adresse:hover,
+.wrapper .Adresse:hover .tooltip,
+.wrapper .Adresse:hover .tooltip::before {
+  background: rgb(135, 255, 235);
+  color: #000000;
+}
+
+.wrapper .github:hover,
+.wrapper .github:hover .tooltip,
+.wrapper .github:hover .tooltip::before {
+  background: #333333;
+  color: #ffffff;
+}
+.telephone {
   color: #fff;
+}
+.maps {
+  color: #ffffff;
 }

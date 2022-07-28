@@ -52,7 +52,7 @@
                 <a class="nav-link" href="#portfolio">Portfolio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#cv">Téléchargez mon CV</a>
+                <a class="nav-link" href="#cv">Mon CV</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#competences">Compétences</a>
@@ -74,7 +74,10 @@
               <div class="position-relative">
                 <h1>Tiana</h1>
                 <div class="position-absolute">
-                  <p class="Ttexte">Developpeuse Web & Web Mobile</p>
+                  <div class="typewriter">
+                    <p class="Ttexte">Developpeuse Web & Web Mobile</p>
+                  </div>
+                  
                 </div>
               </div>
             </div>
@@ -109,8 +112,8 @@
         <div class="container">
           <div class="row">
             <div class="col-md-12">
-              <h2 class="text-pop-up-top text-center my-5">PORTFOLIO</h2>
-              <h3 class=" text-center my-5">Mes réalisations</h3>
+              <h2 class="text-pop-up-top text-start-my-4">PORTFOLIO</h2>
+              <h3 class="text-start-my-4">Mes réalisations</h3>
             </div>
           </div>
           <div class="row g-0">
@@ -149,7 +152,7 @@
             <div class="col-md-4">
               <div class="position-relative box">
                 <div class="zoom">
-                  <a href="assets/images/po.png" data-toggle="lightbox">
+                  <a href="assets/images/po1.png" data-toggle="lightbox">
                     <div class="position-absolute voir">
                       <span>voir</span>
                     </div>
@@ -165,7 +168,7 @@
             <div class="col-md-4">
               <div class="position-relative box">
                 <div class="zoom">
-                  <a href="assets/images/pop.png" data-toggle="lightbox">
+                  <a href="assets/images/pop1.png" data-toggle="lightbox">
                     <div class="position-absolute voir">
                       <span>voir</span>
                     </div>
@@ -215,10 +218,10 @@
       </section>
 
       <section id="cv" class="d-flex align-items-center py-5">
-        <div class="container">
+        <div class="cv container">
           <div class="row">
             <div class="col-md-12">
-              <div class="  text-center my-5 "><a class=" btn" href="#">Télechargez mon CV</a></div>
+              <div class=" telechargez text-center my-5 "><a class=" btn bg-dark" href="https://codepen.io/team/jotform/pen/XWmqoMp">Mon CV</a></div>
               
              
             </div>
@@ -240,8 +243,8 @@
               <h3 class=" text-start my-5">Mes réalisations</h3>
             </div>
             </div>
-            <div class="row">
-              <div class="col-md-6"> <div>
+            <!--<div class="row">
+              <d<iv class="col-md-6"> <div>
                 <i class="fa-brands fa-html5"></i>
                 <div class="progress my-1">
                   <div
@@ -290,7 +293,53 @@
                   ></div>
                 </div>
               </div>
-            </div>   
+            </div>    -->
+            <div class="skillcontainer">
+              <div id="left">
+                <p class="skills">Web Development</p>
+                <ul class="skills-bar-container">
+                  <label>HTML5 / CSS3</label>
+                  <span class="percent"></span>
+                  <li>
+                    <span class="progressbar progressblue" id="progress-htmlcss"></span>
+                  </li>
+            
+                  <label>JavaScript / jQuery</label>
+                  <span class="percent"></span>
+                  <li>
+                    <span class="progressbar progressblue" id="progress-jsjq"></span>
+                  </li>
+            
+                  <label>PHP</label>
+                  <span class="percent"></span>
+                  <li>
+                    <span class="progressbar progressblue" id="progress-php"></span>
+                  </li>
+                </ul>
+              </div>
+              <div id="right">
+                <p class="skills">Programming</p>
+                <ul class="skills-bar-container">
+                  <label>Java</label>
+                  <span class="percent"></span>
+                  <li>
+                    <span class="progressbar progressblue" id="progress-java"></span>
+                  </li>
+            
+                  <label>C#</label>
+                  <span class="percent" id="angular-pourcent"></span>
+                  <li>
+                    <span class="progressbar progressblue" id="progress-csharp"></span>
+                  </li>
+                  
+                  <label>SQL / MySQL</label>
+                  <span class="percent" id="angular-pourcent"></span>
+                  <li>
+                    <span class="progressbar progressblue" id="progress-sql"></span>
+                  </li>
+                </ul>
+              </div>
+            </div>
             </div>
           </div>
         </div>
@@ -300,23 +349,44 @@
         <div class="container">
           <div class="row">
             <div class="col-md-9 offset-md-3">
-              <h2 class="text-start my-4">Contact</h2>
+              <h2 class="text-start-my-4">Contact</h2>
               <h3 class="rejoignezMoi text-start my-3">Rejoignez-moi</h3>
             </div>
           </div>
           <div class="row d-flex align-items-center">
             <div class="col-md-4 offset-md-3">
-              <ul class="list-unstyled">
-                <li><i class="fa-solid fa-envelope"></i> niova@live.fr</li>
-                <li><i class="fa-solid fa-mobile-screen"></i> +33 6 72 79 08 27</li>
-                <li><i class="fa-solid fa-location-dot"></i> 7 Rue May Fauchette AUMONT 39800 FRANCE</li>
-                
-              </ul>
               <div class="reseau d-flex align-items-center">
-                  <a href="#"><i class=" github fa-brands fa-github"></i></a>
+                  <!--<a href="#"><i class=" github fa-brands fa-github"></i></a>
                   <a href="#"><i class=" linkedin fa-brands fa-linkedin"></i></i></a>
-          
-                </div>
+                  <a href="#"><i class=" envelope fa-solid fa-envelope"></i> </a>
+                <a href="#"><i class="telephone fa-solid fa-mobile-screen"></i></a>
+                <a href="#"><i class="adresse fa-solid fa-location-dot"></i></a>
+                  -->
+                  <ul class="wrapper">
+                    <li class="icon linkedin">
+                      <span class="tooltip">linkedin</span>
+                      <span><i class="fa-brands fa-linkedin"></i></span>
+                    </li>
+                    
+                    <li class="icon Adresse">
+                      <span class="tooltip">Adresse</span>
+                      <span><i class="fa-solid fa-envelope"></i></span>
+                    </li>
+                    <li class="icon github">
+                      <span class="tooltip">Github</span>
+                      <span><i class="fab fa-github"></i></span>
+                    </li>
+                   
+                  </ul>
+                  </div>
+              <div class="info">
+                <ul>
+                  <li><a href="#"><i class="telephone fa-solid fa-mobile-screen"></i></a></li>
+                  <li><a href="#"><i class="maps fa-solid fa-location-dot"></i></a></li>
+                </ul>
+                
+                
+              </div>
             </div>
             <div class="col-md-4">
               
@@ -408,7 +478,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <footer class="bg-light text-center text-lg-start">
       <!-- Copyright -->
-      <div class="text-center p-3" style="background-color: white">
+      <div class="copyright text-center p-3" style="background-color: white">
         © 2022 Copyright
       </div>
       
