@@ -1,8 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Economica:wght@700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Economica:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 @font-face {
-  font-family: "Amalfi Coast";
-  src: url("../fonts/Amalfi\ Coast.ttf");
+  font-family: 'Amalfi Coast';
+  src: url('../fonts/Amalfi\ Coast.ttf');
   /* font-display: initial; */
 }
 
@@ -12,7 +13,7 @@ body {
 }
 
 header {
-  font-family: "Economica", sans-serif;
+  font-family: 'Economica', sans-serif;
 }
 
 .bg-dark {
@@ -57,7 +58,7 @@ header {
 }
 
 #accueil {
-  background-image: url("../images/tiana.png");
+  background-image: url('../images/tiana.png');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: top 0% right 0%;
@@ -66,7 +67,7 @@ header {
   color: #000;
 }
 .description {
-  font-family: "Amalfi Coast";
+  font-family: 'Amalfi Coast';
 }
 /*
 p {
@@ -142,16 +143,16 @@ p {
 
 h1 {
   color: rgb(250, 250, 250);
-  font-family: "Amalfi Coast", sans-serif;
+  font-family: 'Amalfi Coast', sans-serif;
   font-size: 8rem;
 }
 
 .Ttexte {
   color: #ffffff;
-  font-family: "economica";
+  font-family: 'economica';
 }
 .typewriter p {
-  font-family: "economica"; /* Web-safe typewriter-like font */
+  font-family: 'economica'; /* Web-safe typewriter-like font */
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: 0.17em solid rgb(255, 255, 255); /* The typewriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
@@ -184,14 +185,14 @@ a {
 
 h2 {
   color: #ffffff;
-  font-family: "Economica", sans-serif;
+  font-family: 'Economica', sans-serif;
   font-weight: bold;
   font-size: 3.5rem;
   text-transform: uppercase;
 }
 h3 {
   color: white;
-  font-family: "autography";
+  font-family: 'autography';
   font-size: 40px;
   margin: 20px;
   padding: 20px;
@@ -199,7 +200,7 @@ h3 {
 
 .description {
   color: rgb(0, 0, 0);
-  font-family: "autography";
+  font-family: 'autography';
   font-size: 35px;
 }
 
@@ -268,7 +269,7 @@ textarea:focus {
 
 .skillcontainer {
   background: rgb(0, 0, 0);
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 .skills {
@@ -648,7 +649,7 @@ textarea:focus {
 
 .wrapper .tooltip::before {
   position: absolute;
-  content: "";
+  content: '';
   height: 8px;
   width: 8px;
   background: #ffffff;
@@ -690,9 +691,11 @@ textarea:focus {
   background: #333333;
   color: #ffffff;
 }
-.telephone {
+
+.info {
   color: #fff;
 }
-.maps {
-  color: #ffffff;
+
+.info ul li {
+  font-size: 1rem;
 }
