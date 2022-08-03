@@ -84,15 +84,29 @@
           </div>
         </div>
       </section>
+      <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+<div id='stars'></div>
+<div id='stars2'></div>
+<div id='stars3'></div>
+<div id='title'>
+  <!--<span>
+    PURE CSS
+  </span>
+  <br>
+  <span>
+    PARALLAX PIXEL STARS
+  </span> -->
+</div>
 
-      <section id="profil" class="d-flex align-items-center py-5">
-        <div class="container">
+      <section id="profil" class="d-flex align-items-center py-5 kenburns-top-right">
+        <div class="container ">
           <div class="row">
             <div class="col-md-12">
               <div class="quiSuisJe"></div>
-              <h2 class="QuiSuiJe text-center my-5">Qui suis-je ?</h2>
+              <h2 class="QuiSuiJe text-center my-2">Qui suis-je ?</h2>
               <p class="description">
-                Bonjour, </br> Je m’appelle Tiana Andriamanantsara , développeuse Web
+                Bonjour, </br> 
+                Je m’appelle Tiana Andriamanantsara , développeuse Web
                 et Web mobile. Auparavant, j’ai effectué plusieurs années en
                 tant que Responsable de production publicitaire ce qui m’a
                 permis d’acquérir de très bonnes compétences telles que
@@ -107,20 +121,21 @@
           </div>
         </div>
       </section>
+      <div class="position-relative"></div>
 
-      <section id="portfolio">
+      <section id="portfolio" class="d-flex align-items-center">
         <div class="container">
-          <div class="row">
+          <div class="row ">
             <div class="col-md-12">
               <h2 class="text-pop-up-top text-start-my-4">PORTFOLIO</h2>
               <h3 class="text-start-my-4">Mes réalisations</h3>
             </div>
           </div>
-          <div class="row g-0">
+          <div class="row g-0 ">
             <div class="col-md-4">
               <div class="position-relative box">
                 <div class="zoom">
-                  <a href="assets/images/cap.png" data-toggle="lightbox">
+                  <a href="assets/images/cap.png" data-toggle="lightbox" data-gallery="gallery">
                     <div class="position-absolute voir">
                       <span>voir</span>
                     </div>
@@ -134,9 +149,13 @@
               </div>
             </div>
             <div class="col-md-4">
+              <!-- <div id="gallery1">
+                <a href="assets/images/crea1.png" data-toggle="lightbox" data-gallery="gallery" style="visibility: hidden;"></p>
+              </div> -->
               <div class="position-relative box">
                 <div class="zoom">
-                  <a href="assets/images/cr.png" data-toggle="lightbox">
+                  
+                  <a href="assets/images/crea2.png" data-toggle="lightbox" data-gallery="gallery">
                     <div class="position-absolute voir">
                       <span>voir</span>
                     </div>
@@ -152,14 +171,14 @@
             <div class="col-md-4">
               <div class="position-relative box">
                 <div class="zoom">
-                  <a href="assets/images/po1.png" data-toggle="lightbox">
+                  <a href="assets/images/maquette.png" data-toggle="lightbox" data-gallery="gallery">
                     <div class="position-absolute voir">
                       <span>voir</span>
                     </div>
                   </a>
                   <img
                     class="img-fluid"
-                    src="assets/images/fondpoligny.png"
+                    src="assets/images/poligny77.png"
                     alt="poligny"
                   />
                 </div>
@@ -168,7 +187,7 @@
             <div class="col-md-4">
               <div class="position-relative box">
                 <div class="zoom">
-                  <a href="assets/images/portfolio1.png" data-toggle="lightbox">
+                  <a href="assets/images/portfolio1.png" data-toggle="lightbox" data-gallery="gallery">
                     <div class="position-absolute voir">
                       <span>voir</span>
                     </div>
@@ -184,7 +203,7 @@
             <div class="col-md-4">
               <div class="position-relative box">
                 <div class="zoom">
-                  <a href="assets/images/bu.png" data-toggle="lightbox">
+                  <a href="assets/images/bu.png" data-toggle="lightbox" data-gallery="gallery">
                     <div class="position-absolute voir">
                       <span>voir</span>
                     </div>
@@ -200,14 +219,14 @@
             <div class="col-md-4">
               <div class="position-relative box">
                 <div class="zoom">
-                  <a href="assets/images/rec.png" data-toggle="lightbox">
+                  <a href="assets/images/rec.png" data-toggle="lightbox" data-gallery="gallery">
                     <div class="position-absolute voir">
                       <span>voir</span>
                     </div>
                   </a>
                   <img
                     class="img-fluid"
-                    src="assets/images/recette.png"
+                    src="assets/images/crea.png"
                     alt="recette"
                   />
                 </div>
@@ -221,7 +240,7 @@
         <div class="cv container">
           <div class="row">
             <div class="col-md-12">
-              <div class=" telechargez text-center my-5 "><a class=" btn bg-dark" href="https://codepen.io/team/jotform/pen/XWmqoMp">Mon CV</a></div>
+              <div class=" telechargez text-center my-5 "><a class=" btn btn-lg btn-outline-light " href="https://codepen.io/team/jotform/pen/XWmqoMp">Mon CV</a></div>
               
              
             </div>
@@ -235,133 +254,100 @@
             
       </section>
 
-      <section id="competences" class="d-flex align-items-center py-5">
+      <section id="competences" class="py-5">
         <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <h2 class="text-pop-up-top text-start my-5">compétences</h2>
-              <h3 class=" text-start my-5">Mes réalisations</h3>
+          <div class="row d-flex align-items-center">
+            <div class="col-md-6">
+              <h2 class="text-pop-up-top text-start">compétences</h2>
+              <h3 class="text-start">Ce que je sais faire</h3>
             </div>
-            </div>
-            <!--<div class="row">
-              <d<iv class="col-md-6"> <div>
-                <i class="fa-brands fa-html5"></i>
-                <div class="progress my-1">
-                  <div
-                    class="progress-bar progress-bar-striped progress-bar-animated"
-                    role="progressbar"
-                    aria-valuenow="30"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                    style="width: 30%"
-                  ></div>
+          
+            <!-- <div class="skillcontainer"> -->
+              
+                <div class="col-md-6">
+                  <!-- <p class="skills">Web Development</p> -->
+                  <ul class="skills-bar-container">
+                    <label>HTML5 / CSS3</label>
+                    <span class="percent"></span>
+                    <li>
+                      <span class="progressbar progressblue" id="progress-htmlcss"></span>
+                    </li>
+              
+                    <label>JavaScript / jQuery</label>
+                    <span class="percent"></span>
+                    <li>
+                      <span class="progressbar progressblue" id="progress-jsjq"></span>
+                    </li>
+              
+                    <label>PHP</label>
+                    <span class="percent"></span>
+                    <li>
+                      <span class="progressbar progressblue" id="progress-php"></span>
+                    </li>
+                  </ul>                 
+              
+                  <!-- <p class="skills">Programming</p> -->
+                  <ul class="skills-bar-container">
+                    <label>Java</label>
+                    <span class="percent"></span>
+                    <li>
+                      <span class="progressbar progressblue" id="progress-java"></span>
+                    </li>
+              
+                    <label>C#</label>
+                    <span class="percent" id="angular-pourcent"></span>
+                    <li>
+                      <span class="progressbar progressblue" id="progress-csharp"></span>
+                    </li>
+                    
+                    <label>SQL / MySQL</label>
+                    <span class="percent" id="angular-pourcent"></span>
+                    <li>
+                      <span class="progressbar progressblue" id="progress-sql"></span>
+                    </li>
+                  </ul>
                 </div>
-              </div><div>
-                <i class="fa-brands fa-css3"></i>
-                <div class="progress my-1">
-                  <div
-                    class="progress-bar progress-bar-striped progress-bar-animated"
-                    role="progressbar"
-                    aria-valuenow="30"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                    style="width: 30%"
-                  ></div>
-                </div>
-              </div><div>
-                <i class="fa-brands fa-bootstrap"></i>
-                <div class="progress my-0.5">
-                  <div
-                    class="progress-bar progress-bar-striped progress-bar-animated"
-                    role="progressbar"
-                    aria-valuenow="5"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                    style="width: 5%"
-                  ></div>
-                </div>
-              </div><div>
-                <i class="fa-brands fa-js"></i>
-                <div class="progress my-0.5">
-                  <div
-                    class="progress-bar progress-bar-striped progress-bar-animated"
-                    role="progressbar"
-                    aria-valuenow="5"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                    style="width: 5%"
-                  ></div>
-                </div>
-              </div>
-            </div>    -->
-            <div class="skillcontainer">
-              <div id="left">
-                <p class="skills">Web Development</p>
-                <ul class="skills-bar-container">
-                  <label>HTML5 / CSS3</label>
-                  <span class="percent"></span>
-                  <li>
-                    <span class="progressbar progressblue" id="progress-htmlcss"></span>
-                  </li>
-            
-                  <label>JavaScript / jQuery</label>
-                  <span class="percent"></span>
-                  <li>
-                    <span class="progressbar progressblue" id="progress-jsjq"></span>
-                  </li>
-            
-                  <label>PHP</label>
-                  <span class="percent"></span>
-                  <li>
-                    <span class="progressbar progressblue" id="progress-php"></span>
-                  </li>
-                </ul>
-              </div>
-              <div id="right">
-                <p class="skills">Programming</p>
-                <ul class="skills-bar-container">
-                  <label>Java</label>
-                  <span class="percent"></span>
-                  <li>
-                    <span class="progressbar progressblue" id="progress-java"></span>
-                  </li>
-            
-                  <label>C#</label>
-                  <span class="percent" id="angular-pourcent"></span>
-                  <li>
-                    <span class="progressbar progressblue" id="progress-csharp"></span>
-                  </li>
-                  
-                  <label>SQL / MySQL</label>
-                  <span class="percent" id="angular-pourcent"></span>
-                  <li>
-                    <span class="progressbar progressblue" id="progress-sql"></span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            </div>
+              
+            <!-- </div> -->
           </div>
-        </div>
+          <div class="container">
+            <div class="row d-flex align-items-center">
+              <div class="col-md-4">
+                <div id="origami_bird_box">
+                  <div class="origami_bird">
+                    <div class="origami_bird_body">
+                      <div class="origami_bird_head"></div>
+                      <div class="origami_bird_wing_left">
+                        <div class="origami_bird_wing_left_top"></div>
+                      </div>
+                      <div class="origami_bird_wing_right">
+                        <div class="origami_bird_wing_right_top"></div>
+                      </div>
+                      <div class="origami_bird_tail_left"></div>
+                      <div class="origami_bird_tail_right"></div>
+                    </div>
+                  </div>
+                </div>
+        </div>  
+
       </section>
 
       <section id="contact" class="d-flex align-items-center">
         <div class="container">
-          <div class="row">
+          <!-- <div class="row">
             <div class="col-md-9 offset-md-3">
               <h2 class="text-start-my-4">Contact</h2>
               <h3 class="rejoignezMoi text-start my-3">Rejoignez-moi</h3>
             </div>
-          </div>
+          </div> -->
           <div class="row d-flex align-items-center">
             <div class="col-md-4 offset-md-3">
+
+              <h2 class="text-start-my-4">Contact</h2>
+              <h3 class="rejoignezMoi text-start my-3">Rejoignez-moi</h3>
+
               <div class="reseau d-flex align-items-center">
-                  <!--<a href="#"><i class=" github fa-brands fa-github"></i></a>
-                  <a href="#"><i class=" linkedin fa-brands fa-linkedin"></i></i></a>
-                  <a href="#"><i class=" envelope fa-solid fa-envelope"></i> </a>
-                <a href="#"><i class="telephone fa-solid fa-mobile-screen"></i></a>
-                <a href="#"><i class="adresse fa-solid fa-location-dot"></i></a>
-                  -->
+                 
                   <ul class="wrapper">
                     <li class="icon linkedin">
                       <span class="tooltip">linkedin</span>
@@ -376,7 +362,10 @@
                       <span class="tooltip">Github</span>
                       <span><i class="fab fa-github"></i></span>
                     </li>
-                   
+                    <li class="icon discord">
+                      <span class="tooltip">discord</span>
+                      <span><i class="fa-brands fa-discord"></i></span>
+                    </li>
                   </ul>
                   </div>
               <div class="info">
@@ -385,10 +374,11 @@
                     <i class="telephone fa-solid fa-mobile-screen"></i> 06 72 79 08 27
                   </li>
                   <li>
-                    <i class="maps fa-solid fa-location-dot"></i> 7 rue May Fauchette Aumont 39 8000
+                    <i class="maps fa-solid fa-location-dot"></i> 7 rue May Fauchette Aumont 39 800
                   </li>
                 </ul>
               </div>
+              
             </div>
 
             <div class="col-md-4">
