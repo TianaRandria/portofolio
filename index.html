@@ -9,10 +9,12 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
     />
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
     />
+    <link rel="shortcut icon" type="image/png" href="assets/images/favicon.ico"/>
     <link rel="stylesheet" href="assets/css/style.css" />
     <script
       src="https://kit.fontawesome.com/ad6303b92e.js"
@@ -52,7 +54,7 @@
                 <a class="nav-link" href="#portfolio">Portfolio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#cv">Mon CV</a>
+                <a class="nav-link" href="assets/cvtiana.pdf">CV</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#competences">Compétences</a>
@@ -67,10 +69,11 @@
     </header>
 
     <main data-bs-spy="scroll" data-bs-target="#navigation">
+
       <section id="accueil" class="d-flex align-items-center">
         <div class="container">
           <div class="row">
-            <div class="col-md-12">
+            <div class="col">
               <div class="position-relative">
                 <h1>Tiana</h1>
                 <div class="position-absolute">
@@ -84,7 +87,8 @@
           </div>
         </div>
       </section>
-      <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+
+      
 <div id='stars'></div>
 <div id='stars2'></div>
 <div id='stars3'></div>
@@ -101,7 +105,7 @@
       <section id="profil" class="d-flex align-items-center py-5 kenburns-top-right">
         <div class="container ">
           <div class="row">
-            <div class="col-md-12">
+            <div class="col-sm-12 col-md-6">
               <div class="quiSuisJe"></div>
               <h2 class="QuiSuiJe text-center my-2">Qui suis-je ?</h2>
               <p class="description">
@@ -117,25 +121,32 @@
                 afin d’acquerir le titre professionnel de developpeur web et web
                 mobile .
               </p>
+              
             </div>
+            <!-- <div class="col-md-6"></div> -->
           </div>
         </div>
       </section>
-      <div class="position-relative"></div>
+      <!-- <div class="position-relative"></div> -->
 
       <section id="portfolio" class="d-flex align-items-center">
         <div class="container">
-          <div class="row ">
-            <div class="col-md-12">
+          <div class="row">
+            <div class="col-sm-12 col-md-12">
               <h2 class="text-pop-up-top text-start-my-4">PORTFOLIO</h2>
               <h3 class="text-start-my-4">Mes réalisations</h3>
             </div>
           </div>
-          <div class="row g-0 ">
-            <div class="col-md-4">
+          <div class="row g-0">
+            <div class="col-sm-12 col-md-4">
               <div class="position-relative box">
                 <div class="zoom">
-                  <a href="assets/images/cap.png" data-toggle="lightbox" data-gallery="gallery">
+                  <a
+                    href="assets/images/cap.png"
+                    data-toggle="lightbox"
+                    data-gallery="gallery"
+                    data-src="<a href='https://google.com' target='_blank'><img src='assets/images/cap.png' class='img-fluid' /></a>"
+                    data-type="html">
                     <div class="position-absolute voir">
                       <span>voir</span>
                     </div>
@@ -153,6 +164,7 @@
                 <a href="assets/images/crea1.png" data-toggle="lightbox" data-gallery="gallery" style="visibility: hidden;"></p>
               </div> -->
               <div class="position-relative box">
+                
                 <div class="zoom">
                   
                   <a href="assets/images/crea2.png" data-toggle="lightbox" data-gallery="gallery">
@@ -165,6 +177,7 @@
                     src="assets/images/crea.png"
                     alt="crea"
                   />
+                  
                 </div>
               </div>
             </div>
@@ -240,7 +253,7 @@
         <div class="cv container">
           <div class="row">
             <div class="col-md-12">
-              <div class=" telechargez text-center my-5 "><a class=" btn btn-lg btn-outline-light " href="https://codepen.io/team/jotform/pen/XWmqoMp">Mon CV</a></div>
+              <div class=" telechargez text-center my-5 "><a class=" btn btn-lg btn-outline-light " href="assets/cvtiana.pdf">Téléchargez mon CV</a></div>
               
              
             </div>
@@ -351,20 +364,20 @@
                   <ul class="wrapper">
                     <li class="icon linkedin">
                       <span class="tooltip">linkedin</span>
-                      <span><i class="fa-brands fa-linkedin"></i></span>
+                      <span><a href="https://www.linkedin.com/in/tiana-andriamanantsara/"><i class="fa-brands fa-linkedin"></i></a></span>
                     </li>
                     
                     <li class="icon Adresse">
                       <span class="tooltip">Email</span>
-                      <span><i class="fa-solid fa-envelope"></i></span>
+                      <span><a href="mailto:niova@live.fr"><i class="fa-solid fa-envelope"></i></a></span>
                     </li>
                     <li class="icon github">
                       <span class="tooltip">Github</span>
-                      <span><i class="fab fa-github"></i></span>
+                      <span><a href="https://github.com/TianaRandria"><i class="fab fa-github"></i></a></span>
                     </li>
                     <li class="icon discord">
                       <span class="tooltip">discord</span>
-                      <span><i class="fa-brands fa-discord"></i></span>
+                      <span><a href="TianaA#3858"><i class="fa-brands fa-discord"></i></a></span>
                     </li>
                   </ul>
                   </div>
@@ -464,7 +477,7 @@
     <footer class="bg-light text-center text-lg-start">
       <!-- Copyright -->
       <div class="copyright text-center p-3" style="background-color: white">
-        © 2022 Copyright
+        Tiana Randria © 2022 All rights reserved
       </div>
       
       <!-- Copyright -->
@@ -480,3 +493,4 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   </body>
 </html>
+
