@@ -1,0 +1,131 @@
+.ordi{
+
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+.Gtexte {
+    position: absolute;
+    margin: -78px;
+    left: 906px;
+    z-index: 9999;
+    font-size: 13px;
+}
+.line-1{
+    position: relative;
+    top: 50%;  
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 100%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+}
+
+/* Animation */
+.anim-typewriter{
+  animation: typewriter 4s steps(100) 1s 1 normal both,
+             blinkTextCursor 500ms steps(100) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 24em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}
+    .scale-in-ver-top {
+        -webkit-animation: scale-in-ver-top 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+                animation: scale-in-ver-top 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    }
+    @-webkit-keyframes scale-in-ver-top {
+        0% {
+          -webkit-transform: scaleY(0);
+                  transform: scaleY(0);
+          -webkit-transform-origin: 100% 0%;
+                  transform-origin: 100% 0%;
+          opacity: 1;
+        }
+        100% {
+          -webkit-transform: scaleY(1);
+                  transform: scaleY(1);
+          -webkit-transform-origin: 100% 0%;
+                  transform-origin: 100% 0%;
+          opacity: 1;
+        }
+      }
+      @keyframes scale-in-ver-top {
+        0% {
+          -webkit-transform: scaleY(0);
+                  transform: scaleY(0);
+          -webkit-transform-origin: 100% 0%;
+                  transform-origin: 100% 0%;
+          opacity: 1;
+        }
+        100% {
+          -webkit-transform: scaleY(1);
+                  transform: scaleY(1);
+          -webkit-transform-origin: 100% 0%;
+                  transform-origin: 100% 0%;
+          opacity: 1;
+        }
+      }
+
+.ordinateur {
+    height: 547px;
+    position: absolute;
+    bottom: 156px;
+    right: 554px;
+}
+.phonecreative {
+    position: absolute;
+    z-index: 99;
+    }
+    .scale-in-ver-top{
+        position: absolute;
+        width: 100px;
+        height: 200px;
+        right: 127px;
+        bottom: -38px;
+}
+.logohtml{
+    position:absolute;
+    z-index: 999;
+    width: 30px;
+    bottom: 200px;
+    right: 200px;
+}
+.logocss{
+    position:absolute;
+    z-index: 999;
+    width: 20px;
+    bottom: 150px;
+    right: 200px;
+}
+.logojs{
+    position:absolute;
+    z-index: 999;
+    width: 30px;
+    bottom: 100px;
+    right: 200px;
+}
+.logogithub{
+    position:absolute;
+    z-index: 999;
+    width: 26px;
+    bottom: 120px;
+    right: 200px;
+}
+.logotrello{
+    position:absolute;
+    z-index: 9999;
+    width: 50px;
+    bottom: 50px;
+    right: 120px;
+}

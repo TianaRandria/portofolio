@@ -1,0 +1,78 @@
+.ordi-overlay img { 
+    width: 100%;
+}
+.ordi-overlay { 
+    display: none;
+}
+.ordi-overlay.open { 
+    display: flex;
+}
+.ordi-overlay { 
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: 9999;
+    overflow: hidden;
+}
+.ordi-modal { 
+    position: relative;
+    display: none;
+}
+.ordi-modal.open { 
+    display: block;
+}
+@media (min-width : 992px) {
+    .ordi-img { 
+        width: 1140px;
+        height: 650px;
+    }
+}
+.ordi-img img { 
+    height: 100%;
+}
+.ordi-description {
+    position: absolute;
+    top: 29px;
+    left: 18%;
+    width: 64%;
+    height: 53%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    font-size: 15px;
+    overflow: scroll;
+}
+@media (min-width : 992px) {
+    .ordi-description {
+        top: 50px;
+        left: 18%;
+        width: 64%;
+        height: 54%;
+        flex-direction: row;
+        overflow: hidden;
+    }
+}
+.ordi-description-tab { 
+    width: 150px;
+    height: fit-content;
+}
+.ordi-description-text { 
+    height: fit-content;
+    text-align: center;
+}
+.ordi-description-logo-list { 
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 5px;
+    justify-content: space-between;
+}
+.ordi-description-logo-item { 
+    width: 30px;
+}
