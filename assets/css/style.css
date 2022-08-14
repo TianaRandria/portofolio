@@ -528,7 +528,7 @@ textarea:focus {
   animation-delay: 2.1s;
 }
 
-#progress-java {
+#progress-boostrap {
   -webkit-animation-name: progress-java;
   animation-name: progress-java;
   -webkit-animation-delay: 0.3s;
@@ -827,8 +827,9 @@ textarea:focus {
 }
 @media screen and (max-width: 576px) {
   .navbar-expand-md .navbar-nav .nav-link {
-    padding-left: 1.5rem;
+    padding-left: 0.75rem;
     margin-top: -8px;
+    font-size: 18px;
   }
   h1{
     font-size: 4.5rem;
@@ -863,3 +864,16 @@ textarea:focus {
 .wrapper a{
 color: #000;
 }
+
+/**************************************ORIGAMIBE*****************************************************************
+.origami svg {
+	height: 75vh;
+}
+
+.origami {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+*/
