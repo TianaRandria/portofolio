@@ -80,7 +80,7 @@ function backToTop() {
 const form = document.getElementById("formulaire_envoyer");
 form.addEventListener('submit',function (event) {
   
-  event.preventDefault()
+  event.preventDefault() /* stopper action par defaut : ity mapijanona azy aminy page ray fa tsy mivadika page hafa */
 
   const prenom = document.getElementById("prenom").value;
   const nom = document.getElementById('nom').value ;
@@ -88,16 +88,17 @@ form.addEventListener('submit',function (event) {
   const objet =document.getElementById('objet').value ;
   const message = document.getElementById('message').value ;
 
-  const newFormData = new FormData()
+  const newFormData = new FormData() /*FormData classe efa ao anaty JS ampiasaina rehefa mampiasa forme */
   newFormData.append('prenom',prenom )
   newFormData.append('nom',nom )
   newFormData.append('email',email )
   newFormData.append('objet',objet )
   newFormData.append('message',message )
 
-  const url = "/portofoliocamping/sendmail.php"
+  //http://portofoliocamping.test/
+  const url = "/sendmail.php"
     
- fetch(url, {
+ fetch(url, { /* methode fetch na mirecuperer na mandefa mipassé donner client makany aminy serveur */
     method: 'POST',
     body: newFormData // body data type must match "Content-Type" header
   }).then(function (response) {
@@ -110,3 +111,5 @@ form.addEventListener('submit',function (event) {
 
   })
 })
+
+//.then =  rehefa avy eo manao console log dia avadika JSON ilay réponse azo avy aminy serveur 

@@ -10,7 +10,7 @@ require 'vendor/phpmailer/phpmailer/src/SMTP.php';
 
 function phpmailersender(
     $prenom,$nom,$email,$objet,$message
-)
+) /*https://www.w3schools.com/php/func_mail_mail.asp*/
 {
     // Créer une nouvelle instance de PHPMailer
     $mail = new PHPMailer(true);
@@ -80,9 +80,11 @@ if(isset($_POST)) {
     'Objet : '.$objet.'<br>'.
     'Message : '.$message.'<br>';
 
+    $mymail = 'tiana.vola39@gmail.com';
+
     // Envoi du message
     if (!simpleMailSender(
-        $email, $objet , $mailMessage
+        $mymail, $objet , $mailMessage
     )) {
         echo json_encode(array('message' =>  "failed"));
     } else {
