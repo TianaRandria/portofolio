@@ -921,3 +921,32 @@ textarea:focus {
 	transform: translate(-50%, -50%);
 }
 */
+.message{
+  color: #000000;
+}
+
+.origami-swan {
+  margin-top: 50px;
+  fill: rgb(252, 252, 252);
+  height: 200px;
+  stroke-dasharray: 340;
+  stroke-dashoffset: 380;
+  animation: swan-dash 5s linear infinite;
+  overflow: visible;
+
+  z-index: 9999;
+}
+
+
+
+@keyframes swan-dash {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes message-dash {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}

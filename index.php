@@ -23,7 +23,9 @@ if (isset($_POST['message'])) {
       </html>
       ';
     mail("v.randriamalalaniaina@codeur.online", "Sujet du message", $message, $header);
+   
     $msg = "Votre message a bien été envoyé !";
+    
   } else {
     $msg = "Tous les champs doivent être complétés !";
   }
@@ -151,6 +153,25 @@ if (isset($_POST['message'])) {
             </p>
 
           </div>
+          <svg class="origami-swan" version="1.1" id="Layer_1" stroke="#393838" stroke-width=".5" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="-248.3 343.8 76.1 65.5" style="enable-background:new -248.3 343.8 76.1 65.5;" xml:space="preserve">
+<path d="M-172.1,392.2c-0.1-0.3-0.3-0.5-0.5-0.6l-16.3-3.9l12.7-19.5c0,0,0,0,0,0l0,0c0-0.1,0.1-0.1,0.1-0.2c0,0,0,0,0-0.1
+	c0-0.1,0-0.1,0-0.2c0,0,0,0,0-0.1c0-0.1,0-0.1-0.1-0.2c0,0,0,0,0,0c0,0,0,0,0,0c0,0,0,0,0,0c0-0.1-0.1-0.1-0.2-0.2c0,0,0,0-0.1,0
+	c-0.1,0-0.1-0.1-0.2-0.1c0,0,0,0-0.1,0c-0.1,0-0.2,0-0.2,0c0,0,0,0,0,0c0,0,0,0,0,0c-3.9,0.7-8.6,1.6-13.5,2.5l4.2-13.7
+	c0-0.1,0-0.1,0-0.2c0,0,0,0,0,0c0-0.1,0-0.1,0-0.2c0,0,0,0,0-0.1c0-0.1-0.1-0.1-0.1-0.2c0,0,0,0,0,0c0,0,0,0,0,0s0,0,0,0
+	c-0.1-0.1-0.1-0.1-0.2-0.1c0,0,0,0-0.1,0c-0.1,0-0.1,0-0.2,0c0,0,0,0-0.1,0c-0.1,0-0.2,0-0.2,0l0,0c0,0,0,0,0,0l-42.7,17.1l-2.9-1.2
+	l2-19.8c0-0.1,0-0.1,0-0.2c0-0.1,0-0.3-0.1-0.4l-2.1-6.3c-0.1-0.3-0.4-0.5-0.7-0.5l-7.2,0.8c0,0,0,0,0,0c0,0,0,0,0,0l-6.6,1.2
+	c-0.3,0.1-0.6,0.3-0.6,0.6c0,0.3,0.2,0.6,0.5,0.7l6.6,2.2c0,0,0,0,0,0c0,0,0,0,0,0l4,1l-4.5,17.6c0,0.1,0,0.2,0,0.4l5.6,20.8
+	c0,0,0,0,0,0c0,0,0,0,0,0c0,0.1,0.1,0.2,0.1,0.2c0,0,0,0,0,0l15.5,19.7c0.1,0.2,0.3,0.3,0.6,0.3h16.5c0.2,0,0.5-0.1,0.6-0.3l1.9-3
+	l3.9,3.1c0.1,0.1,0.3,0.2,0.4,0.2c0.1,0,0.3,0,0.4-0.1l23.7-16.2C-172.2,392.7-172.1,392.5-172.1,392.2z M-234.6,388.6l1-9.8
+	c4.9-0.8,36.2-6.5,53.4-9.7l-46.3,29.8L-234.6,388.6z M-201.7,371.6l13.2-13.4l-3.6,11.7C-195.2,370.4-198.5,371-201.7,371.6z
+	 M-189.8,357.5l-14.3,14.5c-6.5,1.2-12.9,2.3-18.1,3.3l-5.9-2.4L-189.8,357.5z M-224.7,375.8c-4.2,0.8-7.3,1.3-8.8,1.6l0.5-5
+	L-224.7,375.8z M-241.7,346.1v1.5l-3-1L-241.7,346.1z M-240.2,345.9l6-0.7l1.6,4.7l-3.4-0.8c0,0,0,0,0,0c0,0,0,0,0,0l-4.2-1V345.9z
+	 M-235.7,350.6l3.4,0.8l-3.4,33.5l-4.5-16.9L-235.7,350.6z M-203.8,407.8h-15.8l-6.1-7.8l46.4-29.9L-203.8,407.8z M-196.5,407.6
+	l-3.6-2.9l10.3-15.8l15.3,3.7L-196.5,407.6z"/>
+</svg>
+
+
           <!--<div class="col-md-6">
               <div class="origami">
                 <svg id="crane" width="1080" height="1080" viewBox="0 0 1080 1080">
@@ -425,7 +446,7 @@ if (isset($_POST['message'])) {
       </div>
 
       <div class="" id="maps">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2725.472206803502!2d5.637268815126319!3d46.91309744361936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478d3a2397a89929%3A0x90f08a79f332db64!2s7%20Rue%20May%20Fauchette%2C%2039800%20Aumont!5e0!3m2!1sfr!2sfr!4v1658081494116!5m2!1sfr!2sfr" src="https://maps.googleapis.com/maps/api/staticmap?key=YOUR_API_KEY&center=47.65,-122.35&zoom=12&format=png&maptype=roadmap&style=element:geometry%7Ccolor:0x212121&style=element:labels.icon%7Cvisibility:off&style=element:labels.text.fill%7Ccolor:0x757575&style=element:labels.text.stroke%7Ccolor:0x212121&style=feature:administrative%7Celement:geometry%7Ccolor:0x757575&style=feature:administrative.country%7Celement:labels.text.fill%7Ccolor:0x9e9e9e&style=feature:administrative.land_parcel%7Cvisibility:off&style=feature:administrative.locality%7Celement:labels.text.fill%7Ccolor:0xbdbdbd&style=feature:poi%7Celement:labels.text.fill%7Ccolor:0x757575&style=feature:poi.park%7Celement:geometry%7Ccolor:0x181818&style=feature:poi.park%7Celement:labels.text.fill%7Ccolor:0x616161&style=feature:poi.park%7Celement:labels.text.stroke%7Ccolor:0x1b1b1b&style=feature:road%7Celement:geometry.fill%7Ccolor:0x2c2c2c&style=feature:road%7Celement:labels.text.fill%7Ccolor:0x8a8a8a&style=feature:road.arterial%7Celement:geometry%7Ccolor:0x373737&style=feature:road.highway%7Celement:geometry%7Ccolor:0x3c3c3c&style=feature:road.highway.controlled_access%7Celement:geometry%7Ccolor:0x4e4e4e&style=feature:road.local%7Celement:labels.text.fill%7Ccolor:0x616161&style=feature:transit%7Celement:labels.text.fill%7Ccolor:0x757575&style=feature:water%7Celement:geometry%7Ccolor:0x000000&style=feature:water%7Celement:labels.text.fill%7Ccolor:0x3d3d3d&size=480x360" width="100%" height="100%" style="border: 0" allowfullscreen="" loading="lazy" color="black" referrerpolicy="no-referrer-when-downgrade"></iframe>
+       <iframe src="https://www.arcgis.com/apps/instant/basic/index.html?appid=aea46d2603a64dd9969d96896616f5fb" frameborder="0" style="width:80%; height:85%; border:0;" allowfullscreen></iframe>      
       </div>
     </section>
   </main>
